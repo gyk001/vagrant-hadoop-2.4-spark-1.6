@@ -54,7 +54,7 @@ SSH into node1 and issue the following commands to start HDFS.
 1. $HADOOP_PREFIX/sbin/hadoop-daemon.sh --config $HADOOP_CONF_DIR --script hdfs start namenode
 2. $HADOOP_PREFIX/sbin/hadoop-daemons.sh --config $HADOOP_CONF_DIR --script hdfs start datanode
 
-SSH into node2 and issue the following commands to start YARN.
+SSH into ~node2~ node1 and issue the following commands to start YARN.
 
 1. $HADOOP_YARN_HOME/sbin/yarn-daemon.sh --config $HADOOP_CONF_DIR start resourcemanager
 2. $HADOOP_YARN_HOME/sbin/yarn-daemons.sh --config $HADOOP_CONF_DIR start nodemanager
@@ -108,8 +108,8 @@ Then go here https://spark.apache.org/docs/latest/quick-start.html to start the 
 You can check the following URLs to monitor the Hadoop daemons.
 
 1. [NameNode] (http://10.211.55.101:50070/dfshealth.html)
-2. [ResourceManager] (http://10.211.55.102:8088/cluster)
-3. [JobHistory] (http://10.211.55.102:19888/jobhistory)
+2. [ResourceManager] (http://10.211.55.101:8088/cluster)
+3. [JobHistory] (http://10.211.55.101:19888/jobhistory)
 4. [Spark] (http://10.211.55.101:8080)
 
 # Vagrant boxes
