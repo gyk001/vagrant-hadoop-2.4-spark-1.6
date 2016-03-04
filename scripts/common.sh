@@ -1,18 +1,20 @@
 #!/bin/bash
 
 #java
-JAVA_ARCHIVE=jdk-7u51-linux-x64.gz
+JAVA_ARCHIVE=jdk-7u80-linux-x64.tar.gz
+JAVA_VERSION=jdk1.7.0_80
 #hadoop
 HADOOP_PREFIX=/usr/local/hadoop
 HADOOP_CONF=$HADOOP_PREFIX/etc/hadoop
-HADOOP_VERSION=hadoop-2.6.0
+HADOOP_VERSION=hadoop-2.6.4
 HADOOP_ARCHIVE=$HADOOP_VERSION.tar.gz
-HADOOP_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hadoop/core/hadoop-2.6.0/hadoop-2.6.0.tar.gz
+HADOOP_MIRROR_DOWNLOAD=http://apache.opencas.org/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz
 HADOOP_RES_DIR=/vagrant/resources/hadoop
 #spark
-SPARK_VERSION=spark-1.3.0
-SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.4.tgz
-SPARK_MIRROR_DOWNLOAD=http://www.apache.org/dist/spark/spark-1.3.0/spark-1.3.0-bin-hadoop2.4.tgz
+
+SPARK_VERSION=spark-1.6.0-bin-hadoop2.6
+SPARK_ARCHIVE=$SPARK_VERSION.tgz
+SPARK_MIRROR_DOWNLOAD=http://apache.opencas.org/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
 SPARK_RES_DIR=/vagrant/resources/spark
 SPARK_CONF_DIR=/usr/local/spark/conf
 #ssh

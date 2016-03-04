@@ -5,6 +5,7 @@ function installLocalJava {
 	echo "installing oracle jdk"
 	FILE=/vagrant/resources/$JAVA_ARCHIVE
 	tar -xzf $FILE -C /usr/local
+	mv /usr/local/$JAVA_VERSION /usr/local/jdk7
 }
 
 function installRemoteJava {
@@ -15,7 +16,7 @@ function installRemoteJava {
 function setupJava {
 	echo "setting up java"
 	if resourceExists $JAVA_ARCHIVE; then
-		ln -s /usr/local/jdk1.7.0_51 /usr/local/java
+		ln -s /usr/local/jdk7 /usr/local/java
 	else
 		ln -s /usr/lib/jvm/jre /usr/local/java
 	fi

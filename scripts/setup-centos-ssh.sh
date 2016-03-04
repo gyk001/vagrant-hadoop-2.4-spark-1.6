@@ -64,3 +64,6 @@ installSSHPass
 createSSHKey
 overwriteSSHCopyId
 sshCopyId
+
+# ssh自动切换到/vagrant目录
+echo cd /vagrant >> /root/.bash_profile

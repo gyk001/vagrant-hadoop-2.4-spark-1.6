@@ -6,6 +6,7 @@
 # Options read when launching programs locally with 
 # ./bin/run-example or ./bin/spark-submit
 # - HADOOP_CONF_DIR, to point Spark towards Hadoop configuration files
+HADOOP_CONF_DIR=$HADOOP_CONF
 # - SPARK_LOCAL_IP, to set the IP address Spark binds to on this node
 # - SPARK_PUBLIC_DNS, to set the public dns name of the driver program
 # - SPARK_CLASSPATH, default classpath entries to append
@@ -48,3 +49,6 @@
 # - SPARK_PID_DIR       Where the pid file is stored. (Default: /tmp)
 # - SPARK_IDENT_STRING  A string representing this instance of spark. (Default: $USER)
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
+
+# 不带hadoop的spark版本需要
+#export SPARK_DIST_CLASSPATH=$(/usr/local/hadoop/bin/hadoop classpath)

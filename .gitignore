@@ -11,3 +11,6 @@
 /learn-scala/.settings/org.eclipse.core.resources.prefs
 /learn-scala/.settings/org.eclipse.jdt.core.prefs
 /learn-scala/.settings/org.eclipse.m2e.core.prefs
+resources/hadoop-2.6.4.tar.gz
+resources/jdk-7u80-linux-x64.tar.gz
+resources/spark-1.6.0-bin-hadoop2.6.tgz
